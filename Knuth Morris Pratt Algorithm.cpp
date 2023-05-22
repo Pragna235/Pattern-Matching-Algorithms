@@ -19,8 +19,8 @@ void KMPSearch(char pat[], char txt[])
 	// Preprocess the pattern (calculate lps[] array)
 	computeLPSArray(pat, M, lps);
 
-	int i = 0; // index for txt[]
-	int j = 0; // index for pat[]
+	int i = 0; // iterator for txt[]
+	int j = 0; // iterator for pat[]
 	while ((N - i) >= (M - j)) {
 		if (pat[j] == txt[i]) {
 			j++;
